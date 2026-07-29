@@ -1,0 +1,15 @@
+info:
+  name: "TC-3: Replace Post 1"
+  type: http
+  seq: 3
+
+http:
+  method: PUT
+  url: https://jsonplaceholder.typicode.com/posts/1
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
