@@ -6,4 +6,5 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: npm install -g @usebruno/cli
-      - run: bru run collection --reporter-json results.json
+      - run: bru run --reporter-json results.json
+        working-directory: collection
